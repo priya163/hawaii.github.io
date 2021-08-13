@@ -1,0 +1,269 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+body {
+  font-size: 1em;
+  background-color: #F7DC75;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#homepage {
+ background-image: url("https://gray-khnl-prod.cdn.arcpublishing.com/resizer/Jppc2yffEw7IvTYyUxF8p6I8N8Y=/1200x675/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/TSO4KES665D2FPGR32SYE5BLBY.jpg");
+
+/* make the background image fill the screen */
+  background-size: cover;
+
+/* Background image is centered vertically and horizontally at all times */
+background-position: center center;
+
+/* Background image doesn’t tile */
+background-repeat: no-repeat;
+
+/* Background image is fixed in the viewport so that it doesn’t move when
+the content’s height is greater than the image’s height */
+background-attachment: fixed;
+  
+}
+
+/* Homepage Title */
+#homepageTitle {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* to make the title in the centre of page*/
+  display: flex;
+  //position: fixed;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: white; 
+  font-size: 5em;
+  text-shadow: 5px 5px black;
+}
+
+
+/* NAV BAR*/
+ul {
+  background-color: orange;
+  list-style-type: none;
+  display:flex;
+  flex-basis: 100%;
+  border: 2px solid black;
+
+}
+li {
+  padding: 1%;
+  text-align: center;
+  justify-content: flex-end;
+   
+  
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  
+
+}
+
+/*home page nav bar*/
+#homepageul {
+  
+
+  /*flexbox*/
+  display: flex;
+
+  /* horizontal*/
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 4px solid black;
+  
+ 
+ flex-basis: 100%;
+
+}
+
+.homepageli {
+  padding: 5%;
+  border: 1px solid black;
+  justify-content: center;
+}
+
+li:hover {
+  background-color: #9a5500;
+}
+
+
+
+/* Homepage flex box */
+#homepageContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* footer that has the homepage image credit */
+footer {
+  display:flex;
+  flex-wrap: nowrap;
+ 
+}
+
+/*homepage image credit*/
+#homepageCredit {
+  color:white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  
+}
+
+/*THE PROBLEM PAGE */
+#theProblem {
+  text-align: center;
+  padding: 1%;
+  background-color: #e68000; 
+  border-block-end: 2px solid black;
+}
+
+#message {
+  text-align: center;
+  margin: 1%;
+  padding: 1%;
+  border: 2px solid black;
+  background-color: coral;
+}
+
+/* video on the Problem page*/
+#video {
+  display: block;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+/* aligning text on 'The Problem' page into columns*/
+.column {
+  position: relative;
+  float: left;
+  height: 19%;
+  width: 28%;
+  padding: 1%;
+  margin: 1%;
+
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Help page titles*/
+.Headings {
+  padding: 1%;
+}
+
+
+/*Help page list of petitions*/
+#helpol {
+  display: block;
+  position: relative;
+  left: 0;
+  padding-left: 2%;
+  list-style-type: circle;
+  
+}
+
+.helpList {
+  position: relative;
+  text-align: left;
+  padding-left: 1%;
+  
+}
+
+.helpList a {
+  color: blue;
+  text-decoration: underline;
+  
+}
+
+.helpList:hover {
+  background-color: #F7DC75;
+  z-index: -1;
+}
+
+
+.text {
+  padding-left: 1%;
+}
+
+/*gif on Help page */
+#jerry {
+  position:realitve;
+  display: block;
+  float: right;
+  padding-right: 1%;
+  z-index: 2;
+
+}
+
+#igContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  
+}
+
+@media screen and (max-width: 850px) {
+  #jerry {
+    width: 50%;
+  }
+  #video {
+    width: 50%;
+  }
+ #igContainer {
+   flex-direction: column;
+   width: 50%;
+ }
+
+ #factGenerator {
+   width: 50%;
+ }
+}
+
+#FactGenerator {
+  background-color: coral;
+  display: block;
+  text-align: center;
+  border: 4px solid black;
+  border-radius: 15%;
+  margin-bottom: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 2%;
+}
+
+#factButton {
+  padding: 5%;
+  margin: 10%;
+  border: 3px solid black;
+  border-radius: 100%;
+  background-color: #faaf53;
+  font-size: 1em;
+}
+
+#fact {
+  font-size: 20px;
+}
